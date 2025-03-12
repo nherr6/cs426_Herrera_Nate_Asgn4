@@ -1,3 +1,16 @@
+# CS 426 - Asgn 4 - Nate Herrera
+
+I adjusted overall visuals to be more aesthetically pleasing: fog, updated textures, etc. I chose neon colors to play into the theme of thieves and the overall futuristic tech aesthetic. Similar to coding IDE dark mode color schemes. The added barriers allow for more technical gameplay and to allow for unique moments by bouncing off the angled barriers or sneaking around players by hiding.
+
+Physics Construct 1 (Collision) - Added bullet script, instead of deleting bullets on any impact they are deleted only when an item is tagged "Ground". The bounding walls are tagged this way to also delete the bullets upon collision.
+
+Physics Construct 2 - Added Physics materials to bullets and newly added barriers. The properties allow the player to sneak along the barriers using friction and the bullets to bounce with bounce properties.
+
+Billboard - Replaced existing billboards displaying part names with 2d transparent textures using the alpha channel and emission to make the signs stand out.
+
+Lights - Added green Spotlight to highlight the green turn in post. Added Red light above player model (parented). Added Yellow light to bullet and emission.
+
+
 # CS 426 - Homework 02
 
 ## Group Members:

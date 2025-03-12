@@ -282,12 +282,20 @@ public class PlayerMovement : NetworkBehaviour
 
 
         // When the user shoots a bullet
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && Cursor.visible == true)
         {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        } else if(Input.GetButtonDown("Fire1") && Cursor.visible == false) {
             // call the BulletSpawningServerRpc method
             // as client can not spawn objects
             // BulletSpawningServerRpc(cannon.transform.position, cannon.transform.rotation);
             FireBullet();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 
